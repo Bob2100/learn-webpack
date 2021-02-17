@@ -11,9 +11,11 @@ module.exports = {
       {
         test: /\.jpg$/,
         use: {
+          // 静态资源
           loader: 'file-loader',
           options: {
-            name: '[name]_[hash].[ext]'
+            name: '[name]_[hash].[ext]',
+            outputPath: 'pics/'
           }
         }
       }
