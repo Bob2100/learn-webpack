@@ -33,5 +33,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [new HtmlWebpackPlugin({
+    title: 'My App',
+    template: './index.html'
+  })]
 }
