@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './index.js',
+  entry: './index2.js',
   output: {
     filename: 'bundle.js',
     // 绝对路径
@@ -32,6 +32,16 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
   },
@@ -52,7 +62,7 @@ module.exports = {
     },
     hot: true,
   },
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'cheap-source-map',
   // enable source code map
   mode: 'development'
 }
