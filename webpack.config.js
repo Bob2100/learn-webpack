@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './index2.js',
+  entry: ["@babel/polyfill", './index2.js'],
   output: {
     filename: 'bundle.js',
     // 绝对路径
