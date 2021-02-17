@@ -1,6 +1,7 @@
 import a from "./a";
 import b from "./b";
 import './index.css';
+import './index2.css';
 
 // const icon = require('./icon.jpg');
 const li = require('./li.jpeg');
