@@ -43,6 +43,9 @@ module.exports = {
       template: './index.html'
     })
   ],
+  devServer: {
+    contentBase: './dist',
+  },
   devtool: 'eval-cheap-module-source-map',
   // enable source code map
   mode: 'development'
