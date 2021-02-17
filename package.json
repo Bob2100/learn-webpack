@@ -8,8 +8,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.2.4",
     "css-loader": "^5.0.2",
     "file-loader": "^6.2.0",
+    "postcss": "^8.2.6",
+    "postcss-loader": "^5.0.0",
     "sass": "^1.32.7",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
