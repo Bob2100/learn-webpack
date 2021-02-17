@@ -45,6 +45,11 @@ module.exports = {
   ],
   devServer: {
     contentBase: './dist',
+    proxy: {
+      '/api': {
+        target: 'http://localhost:9000'
+      },
+    },
   },
   devtool: 'eval-cheap-module-source-map',
   // enable source code map
