@@ -42,5 +42,7 @@ module.exports = {
       filename: 'index.html',
       template: './index.html'
     })
-  ]
+  ],
+  // enable source code map
+  mode: 'development'
 }
