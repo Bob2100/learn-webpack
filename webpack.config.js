@@ -43,6 +43,7 @@ module.exports = {
       template: './index.html'
     })
   ],
+  devtool: 'eval-cheap-module-source-map',
   // enable source code map
   mode: 'development'
 }
