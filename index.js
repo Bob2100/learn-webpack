@@ -1,8 +1,9 @@
 import a from "./a";
 import b from "./b";
 
-const icon = require('./icon.jpg');
-console.log(icon);
+// const icon = require('./icon.jpg');
+const li = require('./li.jpeg');
+console.log(li);
 
 a();
 b();

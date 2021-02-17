@@ -9,13 +9,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jpg$/,
+        test: /\.(jpe?g|png|gif)$/,
         use: {
           // 静态资源
-          loader: 'file-loader',
+          loader: 'url-loader',//可以处理file-loader能处理的所有事情，区别是把图片编译成base64字符串存在js里
           options: {
             name: '[name]_[hash].[ext]',
-            outputPath: 'pics/'
+            outputPath: 'pics/',
+            //小于1KB才转成base64
+            limit: 1024
           }
         }
       }
