@@ -14,3 +14,13 @@ b();
 axios.get('/api/info').then(result => {
   console.log(result.data);
 });
+
+const btn = document.createElement('button');
+btn.innerText = '新增';
+document.body.append(btn);
+
+btn.onclick = () => {
+  const div = document.createElement('div');
+  div.innerText = 'item';
+  document.body.appendChild(div);
+}
