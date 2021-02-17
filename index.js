@@ -12,11 +12,11 @@ a();
 b();
 
 axios.get('/api/info').then(result => {
-  console.log(result.data);
+  console.log(result.data.code);
 });
 
 const btn = document.createElement('button');
-btn.innerText = '新增';
+btn.innerText = '新增2';
 document.body.append(btn);
 
 btn.onclick = () => {
