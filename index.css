@@ -5,5 +5,10 @@ body {
   width: 200px;
   height: 200px;
   background-color: brown;
-  transform: translate(100px, 300px);
+  transform: translate(300px, 100px);
+}
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
 }
